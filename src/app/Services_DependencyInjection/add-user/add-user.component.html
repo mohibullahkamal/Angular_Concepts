@@ -1,0 +1,9 @@
+<h3>Add Users</h3>
+<ul>
+    <li *ngFor="let x of users; let i = index">
+        {{x}} |
+        <a href="#" (click)="onUserRemove(i)">
+            Please Add ...
+        </a>
+    </li>
+</ul>
