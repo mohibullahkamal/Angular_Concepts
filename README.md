@@ -6,4 +6,4 @@
 ### [Link to Angular App](https://mohibullahkamal.github.io/Angular_Concepts/)
 
 
-Simple add/remove feature build using angular.
+Simple add/remove feature built using angular.
