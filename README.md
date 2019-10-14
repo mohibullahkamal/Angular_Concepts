@@ -6,4 +6,4 @@
 ### [Link to Angular App](https://mohibullahkamal.github.io/Angular_Concepts/)
 
 
-Project demonstrating Angular8 concepts.
+Simple add/remove feature build using angular.
