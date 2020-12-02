@@ -17,8 +17,8 @@ export const products = [
     price: 299,
     description: '',
     clicked: false
-  }
-    {
+  },
+  {
     name: 'Android Phone',
     price: 1000,
     description: 'Android ecosystem is managed and maintained by Google',
