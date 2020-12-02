@@ -1,24 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AddUserComponent } from './Services_DependencyInjection/add-user/add-user.component';
-import { RemoveUserComponent } from './Services_DependencyInjection/remove-user/remove-user.component';
-import { CounterService } from './Services_DependencyInjection/counter.service';
-import { UserService } from './Services_DependencyInjection/user.service';
+
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddUserComponent,
-    RemoveUserComponent
+    TopBarComponent,
+    ProductListComponent,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: ProductListComponent },
+    ])
   ],
-  providers: [CounterService, UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

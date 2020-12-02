@@ -1,0 +1,26 @@
+
+<h2>Products</h2>
+
+<div *ngFor="let x of products">
+
+  <h3>
+    <a [title]="x.name + ' details'">
+      {{ x.name }}
+    </a>
+  </h3>
+
+
+  <button (click)="resetNotify(x)">Reset</button>
+
+  <button (click)="share(x)">Share</button>
+
+  <app-product-alerts *ngIf="!x.clicked"
+    [x]="x" (o)="onNotify(x)" (click)="clickedProduct(x)">
+  </app-product-alerts>
+  
+</div>
+
+
+<br><br><br><br>
+<hr><hr>
+Please open browser console to see output...
